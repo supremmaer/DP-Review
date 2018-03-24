@@ -1,0 +1,2 @@
+Added currentDay(Date) to system configuration
+Added nextTicker(int) to system configuration
