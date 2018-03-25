@@ -3202,7 +3202,7 @@
 		</property>
 		<property name="draftMode" value="false" />
 		<property name="auditor" ref="auditor1" />
-		<property name="trip" ref="trip2" />
+		<property name="trip" ref="trip7" />
 	</bean>
 	<bean id="auditRecord3" class="domain.AuditRecord">
 		<property name="moment" value="2016/01/01 12:00" />
@@ -3730,7 +3730,7 @@
 		<property name="comment" value="comentario de la solicitud." />
 		<property name="creditCard" ref="creditCard1" />
 		<property name="explorer" ref="explorer2" />
-		<property name="trip" ref="trip2" />
+		<property name="trip" ref="trip3" />
 		<property name="rejectingReason" value="" />
 	</bean>
 
