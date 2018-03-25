@@ -15,6 +15,8 @@ no tiene sentido el populate.
 
 [Arreglado] enrol survival class, de un viaje que solo tiene una aplicacion, cambiar el if de la linea 72, de survivalClassExplorerController
 
+Populate, Explorer2 tiene application para viaje 2 y viaje 2 no está publicado. Se debería borrar todo lo relacionado con viaje2 que no tuviera sentido
+
 
 
 
