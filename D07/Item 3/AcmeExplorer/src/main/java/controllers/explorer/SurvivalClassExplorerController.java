@@ -1,6 +1,7 @@
 
 package controllers.explorer;
 
+import java.util.Collection;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ import services.SurvivalClassService;
 import services.TripService;
 import controllers.AbstractController;
 import domain.Actor;
+import domain.Application;
 import domain.Explorer;
 import domain.SurvivalClass;
 import domain.Trip;
@@ -58,6 +60,7 @@ public class SurvivalClassExplorerController extends AbstractController {
 		String message;
 		Actor actor;
 		Trip trip;
+		Collection<Application> applications;
 		survivalClass = this.survivalClassService.findOne(survivalClassId);
 		trip = this.tripService.findBySurvivalClass(survivalClass);
 		result = new ModelAndView("redirect:/survivalClass/list.do?tripId=" + trip.getId());
@@ -69,7 +72,9 @@ public class SurvivalClassExplorerController extends AbstractController {
 					actor = this.actorService.findByPrincipal();
 					if (actor instanceof Explorer) {
 						explorer = this.explorerService.findByPrincipal();
-						if (this.applicationService.findByTrip(trip).retainAll(this.applicationService.findAcceptedByExplorer(explorer))) {
+						applications = this.applicationService.findByTrip(trip);
+						applications.retainAll(this.applicationService.findAcceptedByExplorer(explorer));
+						if (!applications.isEmpty()) {
 							if (!explorer.getSurvivalClasses().contains(survivalClass))
 								explorer.addSurvivalClasses(survivalClass);
 							else
