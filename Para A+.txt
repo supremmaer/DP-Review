@@ -7,8 +7,8 @@ Falta Relacion entre CreditCard y Sponsorship en el UML.
 ARREGLADO EN LA ULTIMA: Notaciones @EachURL y @ElementCollection en las stories.
 
 D-07:
-Si entras como manager, y editas una survival class tuya, vuelves a la lista de survivalClass del viaje correspondiente, en vez de a la del manager en cuestion.
-Un manager puede editar las survival classes de otro manager.
+[No es un error] Si entras como manager, y editas una survival class tuya, vuelves a la lista de survivalClass del viaje correspondiente, en vez de a la del manager en cuestion.
+[Solucionado] Un manager puede editar las survival classes de otro manager.
 
 !!PANIC: Como explorer 1, al acceder a mis aplicaciones y clickar en el enlace para displayear el viaje2, tiene sentido al no estar publicado.
 no tiene sentido el populate.
