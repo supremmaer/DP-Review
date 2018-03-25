@@ -10,7 +10,7 @@ D-07:
 [No es un error] Si entras como manager, y editas una survival class tuya, vuelves a la lista de survivalClass del viaje correspondiente, en vez de a la del manager en cuestion.
 [Solucionado] Un manager puede editar las survival classes de otro manager.
 
-!!PANIC: Como explorer 1, al acceder a mis aplicaciones y clickar en el enlace para displayear el viaje2, tiene sentido al no estar publicado.
+[Arreglado] !!PANIC: Como explorer 1, al acceder a mis aplicaciones y clickar en el enlace para displayear el viaje2, tiene sentido al no estar publicado.
 no tiene sentido el populate.
 
 enrol survival class, de un viaje que solo tiene una aplicacion, cambiar el if de la linea 72, de survivalClassExplorerController
