@@ -3298,7 +3298,7 @@
 			<list>
 				<ref bean="application1" />
 				<ref bean="application6" />
-				<ref bean="application9" />
+				<!-- <ref bean="application9" /> -->
 			</list>
 		</property>
 		<property name="finder" ref="finder1" />
@@ -3714,7 +3714,7 @@
 		<property name="rejectingReason" value="" />
 	</bean>
 
-	<bean id="application9" class="domain.Application">
+<!-- 	<bean id="application9" class="domain.Application">
 		<property name="moment" value="2016/12/12 12:00" />
 		<property name="status" value="ACCEPTED" />
 		<property name="comment" value="comentario de la solicitud." />
@@ -3722,7 +3722,7 @@
 		<property name="explorer" ref="explorer1" />
 		<property name="trip" ref="trip2" />
 		<property name="rejectingReason" value="" />
-	</bean>
+	</bean> -->
 
 	<bean id="application10" class="domain.Application">
 		<property name="moment" value="2016/12/12 12:00" />
