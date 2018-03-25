@@ -7,6 +7,7 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.Assert;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -113,6 +114,7 @@ public class SurvivalClassManagerController extends AbstractController {
 			try {
 				location = this.locationService.create(survivalClassForm);
 				trip = survivalClassForm.getTrip();
+				Assert.isTrue(trip.getManager().getId() == principal.getId());
 				survivalClass = this.survivalClassService.create(survivalClassForm);
 				if (trip.getManager().getId() == principal.getId()) {
 					locationAux = this.locationService.save(location);
