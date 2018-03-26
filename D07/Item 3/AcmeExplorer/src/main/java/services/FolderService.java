@@ -49,6 +49,7 @@ public class FolderService {
 	public Folder savePrincipal(final Folder folder) {
 		Assert.notNull(folder);
 		Folder result;
+		Folder parent;
 		Collection<Folder> temp;
 		Actor actor;
 
@@ -57,6 +58,13 @@ public class FolderService {
 		temp = actor.getFolders();
 		if (temp.contains(folder))
 			temp.remove(folder);
+
+		if (temp.contains(folder.getFather())) {
+			parent = folder.getFather();
+			for (final Folder f : parent.getFolders())
+				Assert.isTrue(!f.getName().equals(folder.getName()));
+		}
+
 		result = this.folderRepository.save(folder);
 		temp.add(result);
 		actor.setFolders(temp);
