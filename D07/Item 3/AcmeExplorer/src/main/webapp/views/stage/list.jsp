@@ -11,7 +11,7 @@
 
 <!--  Listing grid -->
 
-<display:table pagesize="5" class="displaytag" keepStatus="true" name="stages" requestURI="${requestURI}" id="row">
+<display:table pagesize="5" class="displaytag" keepStatus="false" name="stages" requestURI="${requestURI}" id="row">
 
 <!-- Attributes -->
 

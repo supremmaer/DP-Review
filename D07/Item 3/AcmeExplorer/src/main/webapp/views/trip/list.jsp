@@ -11,7 +11,7 @@
 
 <!--  Listing grid -->
 
-<display:table pagesize="5" class="displaytag" keepStatus="true" name="trips" requestURI="${requestURI}" id="row"> <!-- TODO: Apply Spring JPA pagination -->
+<display:table pagesize="5" class="displaytag" keepStatus="false" name="trips" requestURI="${requestURI}" id="row"> <!-- TODO: Apply Spring JPA pagination -->
 
 <!-- Attributes -->
 

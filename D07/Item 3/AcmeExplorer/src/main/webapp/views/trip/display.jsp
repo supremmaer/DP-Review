@@ -12,7 +12,7 @@
 
 <jstl:if test="${banner != null}">
 	<div>
-		<a href="${bannerLink}"><img src="${banner}" alt="Sponsorship Banner" /></a>
+		<a href="${bannerLink}"><img style="max-width: 20vw;" src="${banner}" alt="Sponsorship Banner" /></a>
 	</div>
 </jstl:if>
 

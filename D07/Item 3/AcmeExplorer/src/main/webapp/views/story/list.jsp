@@ -12,7 +12,7 @@
 <!-- Listing grid -->
 
 
-<display:table pagesize="5" class="displaytag" keepStatus="true" name="stories" requestURI="${requestURI}" id="row">
+<display:table pagesize="5" class="displaytag" keepStatus="false" name="stories" requestURI="${requestURI}" id="row">
 
 	<!-- Attributes -->
 	

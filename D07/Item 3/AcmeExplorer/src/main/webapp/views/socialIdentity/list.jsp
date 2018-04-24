@@ -8,7 +8,7 @@
 <%@taglib prefix="security"	uri="http://www.springframework.org/security/tags"%>
 <%@taglib prefix="display" uri="http://displaytag.sf.net"%>
 
-<display:table pagesize="5" class="displaytag" keepStatus="true" name="socialIdentities" requestURI="socialIdentity/actor/list.do" id="row">
+<display:table pagesize="5" class="displaytag" keepStatus="false" name="socialIdentities" requestURI="socialIdentity/actor/list.do" id="row">
 	
 
 	

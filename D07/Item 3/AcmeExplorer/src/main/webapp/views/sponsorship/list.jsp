@@ -11,7 +11,7 @@
 
 <!--  Listing grid -->
 
-<display:table pagesize="5" class="displaytag" keepStatus="true"
+<display:table pagesize="5" class="displaytag" keepStatus="false"
 name="sponsorships" requestURI="${requestURI}" id="row">
 
 <!-- Attributes -->
